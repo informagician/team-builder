@@ -6,12 +6,13 @@ const List = props => {
         <div className="list">
         {
             props.members.map(member => (
-                <div className="card">
-                    <h3>{member.fname} {member.lname}</h3>
-                    <p>Role: {member.role}</p>
-                    <p>Email Address: {member.email}</p>
-                    <button type="submit" onClick={props.memberToEdit}>Edit</button>
-                </div>
+                <form className="card" onSubmit={props.memberToEdit}>
+                    <h3 name="fullname" >{member.fullname}</h3>
+                    <p name="role">Role: {member.role}</p>
+                    <p name="email">Email Address: {member.email}</p>
+                    <button type="submit">Edit</button>
+                    <hr />
+                </form>
             ))
         }
         </div>
