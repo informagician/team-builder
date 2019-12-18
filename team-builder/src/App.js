@@ -4,17 +4,19 @@ import Form from './components/Form';
 import List from './components/List';
 
 function App() {
-  let [ member, setMember ] = useState({
-    fname: "",
-    lname: "",
-    location: "",
-    email: ""    
-  });
+  const [ members, setMembers ] = useState([
+    {
+      fname: "Milo",
+      lname: "Rastgoo",
+      role: "Fullstack Developer",
+      email: "hi@informagician.com"    
+    }
+  ]);
 
   return (
     <div className="App">
       <Form />
-      <List />
+      <List members={members}/>
     </div>
   );
 }
