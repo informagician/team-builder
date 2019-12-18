@@ -22,10 +22,17 @@ function App() {
     }
     setMembers([...members, newMember])
   }
+  
+  const memberToEdit = e => {
+    e.preventDefault();
+    setMembers({ fname: members.fname, lname: members.lname, role: members.role, email: members.email});
+    //return console.log('pressed');
+  }
+  
   return (
     <div className="App">
-      <Form addNewMember={addNewMember} />
-      <List members={members}/>
+      <Form addNewMember={addNewMember} memberToEdit={memberToEdit}/>
+      <List members={members} />
     </div>
   );
 }

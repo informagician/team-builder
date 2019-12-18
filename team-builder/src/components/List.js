@@ -10,6 +10,7 @@ const List = props => {
                     <h3>{member.fname} {member.lname}</h3>
                     <p>Role: {member.role}</p>
                     <p>Email Address: {member.email}</p>
+                    <button type="submit" onClick={props.memberToEdit}>Edit</button>
                 </div>
             ))
         }
