@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import Add from './components/Add';
+import Form from './components/Form';
+import List from './components/List';
 
 function App() {
   let [ member, setMember ] = useState({
@@ -9,9 +10,11 @@ function App() {
     location: "",
     email: ""    
   });
+
   return (
     <div className="App">
-      <Add />
+      <Form />
+      <List />
     </div>
   );
 }

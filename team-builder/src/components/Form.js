@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Add = props => {
+const Form = () => {
 
     return (
         <form>
@@ -21,4 +21,4 @@ const Add = props => {
     );
 }
 
-export default Add;
+export default Form;

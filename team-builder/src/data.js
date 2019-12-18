@@ -4,25 +4,25 @@ let team = [
     {
         fname: "Milo",
         lname: "Rastgoo",
-        location: "Toronto",
+        role: "Fullstack Developer",
         email: "hi@informagician.com"
     },
     {
         fname: "Israel",
         lname: "Gonzalez",
-        location: "Las Vegas",
+        role: "Team Lead",
         email: "izzy@domain.com"
     },
     {
         fname: "Aaron",
         lname: "Janovitch",
-        location: "Woodland Hills",
+        role: "Fullstack Developer",
         email: "aj@domain.com"
     },
     {
         fname: "Gus",
         lname: "Baden",
-        location: "city",
+        role: "Fullstack Developer",
         email: "gus@domain.com"
     }
 ]
