@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import team from '../data';
 
-const Form = () => {
+const Form = props => {
   let [member, setMember] = useState({
     fname: "",
     lname: "",
@@ -18,6 +18,7 @@ const Form = () => {
 
   const submitForm = e => {
     e.preventDefault();
+    props.addNewMember(member);
     setMember({ fname: "", lname: "", role:"", email:""});
   }
 
